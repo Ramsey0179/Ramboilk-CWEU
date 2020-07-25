@@ -1,0 +1,19 @@
+sentence = input("Enter a sentence: ")
+dict_sentence = {}for i in sentence:
+if i in dict_sentence:
+dict_sentence[i] += 1
+else:
+dict_sentence[i] = 1
+print(dict_sentence)
+
+sentence = input('Give me a sentence please.')
+a = list(set(sentence))
+print(dict(zip(a,[sentence.count(i) for i in a])))
+
+words = input('Enter a sentence : ')
+dct = dict()
+for word in words:
+    if word not in dct:
+        dct[word]=words.count(word)
+print(dct)
+
